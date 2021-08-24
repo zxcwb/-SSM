@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--配置spring-mvc-->
+    <!--1、开启SpringMVC注解模式-->
+    <mvc:annotation-driven/>
+
+    <!--2、静态资源默认servlet配置
+    1、允许加入静态资源的处理：js，gif、png
+    2、允许使用“/”做整体映射
+    -->
+    <mvc:resources mapping="/resources/**" location="resources/"/>
+    <mvc:default-servlet-handler/>
+
+    <!--3、定好关于视图解析器-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/html/"/>
+        <property name="suffix" value=".html"></property>
+    </bean>
+
+    <!-- 配置文件上传 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--上传文件的最大大小，单位为字节 -->
+        <property name="maxUploadSize" value="17367648787"></property>
+        <!-- 上传文件的编码 -->
+        <property name="defaultEncoding" value="UTF-8"></property>
+    </bean>
+
+    <!--4、扫描web相关的web-->
+    <context:component-scan base-package="com.zxc.o2o.web"/>
+    
+    <!--5、权限拦截器-->
+    <mvc:interceptors>
+        <!--检验是否已登录了店家管理系统的拦截器-->
+        <mvc:interceptor>
+            <mvc:mapping path="/shopadmin/**"/>
+            <bean id="ShopInterceptor" class="com.zxc.o2o.interceptor.shopadmin.ShopLoginInterceptor"/>
+        </mvc:interceptor>
+
+        <!--检验是否对该店铺操作权限的拦截器-->
+        <mvc:interceptor>
+            <mvc:mapping path="/shopadmin/**"/>
+            <!--shoplist page-->
+            <mvc:exclude-mapping path="/shopadmin/getshoplist"/>
+            <mvc:exclude-mapping path="/shopadmin/shoplist"/>
+            <!--shopregistry page-->
+            <mvc:exclude-mapping path="/shopadmin/getshopinitinfo"/>
+            <mvc:exclude-mapping path="/shopadmin/registershop"/>
+            <mvc:exclude-mapping path="/shopadmin/getshopbyid"/>
+            <!--shopmanage page-->
+            <mvc:exclude-mapping path="/shopadmin/modifyshop"/>
+            <mvc:exclude-mapping path="/shopadmin/getshopmanagerinfo"/>
+            <!--ProductCategoryManagementController-->
+            <mvc:exclude-mapping path="/shopadmin/removeproductcategorys"/>
+            <mvc:exclude-mapping path="/shopadmin/addproductcategorys"/>
+            <mvc:exclude-mapping path="/shopadmin/getproductcategorylist"/>
+            <!--ProductManagementController-->
+            <mvc:exclude-mapping path="/shopadmin/modifyproduct"/>
+            <mvc:exclude-mapping path="/shopadmin/getproductbyid"/>
+            <mvc:exclude-mapping path="/shopadmin/addproduct"/>
+            <mvc:exclude-mapping path="/shopadmin/getproductlistbyshop"/>
+
+            <bean id="ShopPermissionInterceptor" class="com.zxc.o2o.interceptor.shopadmin.ShopPermissionInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

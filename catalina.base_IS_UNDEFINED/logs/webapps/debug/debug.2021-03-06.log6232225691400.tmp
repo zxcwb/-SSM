@@ -1,0 +1,190 @@
+2021-03-06 08:59:00:554 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.AreaDao.queryArea] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 08:59:00:586 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 08:59:00:601 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority DESC 
+2021-03-06 08:59:00:717 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2021-03-06 08:59:00:833 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - <==      Total: 4
+2021-03-06 08:59:19:430 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.AreaDao.queryArea] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 08:59:19:434 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 08:59:19:446 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority DESC 
+2021-03-06 08:59:19:501 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2021-03-06 08:59:19:516 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - <==      Total: 4
+2021-03-06 09:02:25:565 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:02:25:565 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:02:25:571 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2021-03-06 09:02:25:618 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2021-03-06 09:02:25:649 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 12
+2021-03-06 09:02:50:493 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:02:50:493 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:02:50:508 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2021-03-06 09:02:50:555 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2021-03-06 09:02:50:577 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 12
+2021-03-06 09:02:50:577 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:02:50:577 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:02:50:577 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null and parent_id = ? ORDER BY priority DESC 
+2021-03-06 09:02:50:577 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 1(Long)
+2021-03-06 09:02:50:577 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 0
+2021-03-06 09:05:50:530 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:05:50:546 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:05:50:546 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2021-03-06 09:05:50:599 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2021-03-06 09:05:50:631 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 12
+2021-03-06 09:05:50:631 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:05:50:631 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:05:50:631 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null and parent_id = ? ORDER BY priority DESC 
+2021-03-06 09:05:50:631 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 20(Long)
+2021-03-06 09:05:50:631 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 0
+2021-03-06 09:07:00:412 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:07:00:428 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:07:00:428 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2021-03-06 09:07:00:481 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2021-03-06 09:07:00:497 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 12
+2021-03-06 09:07:32:289 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:07:32:289 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:07:32:289 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null and parent_id = ? ORDER BY priority DESC 
+2021-03-06 09:07:32:289 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 20(Long)
+2021-03-06 09:07:32:289 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 0
+2021-03-06 09:07:46:428 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:07:46:428 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:07:46:443 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2021-03-06 09:07:46:497 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2021-03-06 09:07:46:512 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 12
+2021-03-06 09:07:46:512 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:07:46:512 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:07:46:528 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null and parent_id = ? ORDER BY priority DESC 
+2021-03-06 09:07:46:528 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 20(Long)
+2021-03-06 09:07:46:528 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 0
+2021-03-06 09:08:06:265 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:08:06:265 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:08:06:281 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2021-03-06 09:08:06:337 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2021-03-06 09:08:06:353 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 12
+2021-03-06 09:08:31:853 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:08:31:853 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:08:31:868 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null and parent_id = ? ORDER BY priority DESC 
+2021-03-06 09:08:31:868 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 20(Long)
+2021-03-06 09:08:31:884 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 0
+2021-03-06 09:09:44:882 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:09:44:882 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:09:44:897 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null ORDER BY priority DESC 
+2021-03-06 09:09:44:944 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2021-03-06 09:09:44:960 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 12
+2021-03-06 09:09:44:960 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:09:44:960 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:09:44:960 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: SELECT shop_category_id, shop_category_name, shop_category_desc, shop_category_img, priority, create_time, last_edit_time, parent_id FROM tb_shop_category WHERE parent_id is not null and parent_id = ? ORDER BY priority DESC 
+2021-03-06 09:09:44:960 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 10(Long)
+2021-03-06 09:09:44:975 [main] DEBUG com.zxc.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 2
+2021-03-06 09:11:12:380 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.updateShop] use [master] Strategy,SqlComman Type [UPDATE]..
+2021-03-06 09:11:12:380 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 09:11:12:411 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ? where shop_id = ? 
+2021-03-06 09:11:12:442 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺(String), test(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 09:11:12.364(Timestamp), 1(Integer), 通过(String), 1(Long)
+2021-03-06 09:11:12:449 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - <==    Updates: 0
+2021-03-06 09:12:54:864 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.updateShop] use [master] Strategy,SqlComman Type [UPDATE]..
+2021-03-06 09:12:54:864 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 09:12:54:895 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ? where shop_id = ? 
+2021-03-06 09:12:54:911 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺(String), test(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 09:12:54.842(Timestamp), 1(Integer), 通过(String), 1(Long)
+2021-03-06 09:12:54:927 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - <==    Updates: 0
+2021-03-06 09:16:11:016 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.updateShop] use [master] Strategy,SqlComman Type [UPDATE]..
+2021-03-06 09:16:11:016 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 09:16:11:038 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ? where shop_id = ? 
+2021-03-06 09:16:11:069 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺(String), test(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 09:16:11.0(Timestamp), 1(Integer), 通过(String), 1(Long)
+2021-03-06 09:16:11:069 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2021-03-06 09:19:21:707 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.AreaDao.queryArea] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:19:21:707 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:19:21:722 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority DESC 
+2021-03-06 09:19:21:760 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2021-03-06 09:19:21:776 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - <==      Total: 4
+2021-03-06 09:20:06:932 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 09:20:06:932 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 09:20:06:939 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 09:20:06:954 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 3(Integer), 1(Long), test3(String), 测试的店铺3(String), test3(String), 15271212657(String), (String), 1(Integer), 2021-03-06 09:20:06.917(Timestamp), 2021-03-06 09:20:06.917(Timestamp), 0(Integer), 审核中(String)
+2021-03-06 09:20:41:453 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 09:20:41:453 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 09:20:41:468 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 09:20:41:484 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 8(Long), 3(Integer), 1(Long), test3(String), 测试的店铺3(String), test3(String), 15271212657(String), (String), 1(Integer), 2021-03-06 09:20:41.437(Timestamp), 2021-03-06 09:20:41.437(Timestamp), 0(Integer), 审核中(String)
+2021-03-06 09:21:20:727 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 09:21:20:727 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 09:21:20:727 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 09:21:20:765 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 8(Long), 3(Integer), 10(Long), test3(String), 测试的店铺3(String), test3(String), 15271212657(String), (String), 1(Integer), 2021-03-06 09:21:20.711(Timestamp), 2021-03-06 09:21:20.711(Timestamp), 0(Integer), 审核中(String)
+2021-03-06 09:21:20:765 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2021-03-06 09:21:21:065 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.updateShop] use [master] Strategy,SqlComman Type [UPDATE]..
+2021-03-06 09:21:21:065 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 09:21:21:097 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ?, area_Id = ?, shop_category_id = ? where shop_id = ? 
+2021-03-06 09:21:21:097 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺3(String), test3(String), test3(String), 15271212657(String), D:\IdeaProject\images\item\shop\31\2021030609212085921.png(String), 1(Integer), 2021-03-06 09:21:20.711(Timestamp), 0(Integer), 审核中(String), 3(Integer), 10(Long), 31(Long)
+2021-03-06 09:21:21:097 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2021-03-06 09:43:34:599 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.queryByShopId] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:43:34:599 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:43:34:615 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id,a.area_name, sc.shop_category_id,sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc where sc.area_id = a.area_id and s.shop_category_id = sc.shop_category_id and s.shop_id = ? 
+2021-03-06 09:43:34:668 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2021-03-06 09:44:48:477 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.queryByShopId] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:44:48:477 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:44:48:493 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id,a.area_name, sc.shop_category_id,sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc where s.area_id = a.area_id and s.shop_category_id = sc.shop_category_id and s.shop_id = ? 
+2021-03-06 09:44:48:540 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2021-03-06 09:45:21:831 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.queryByShopId] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 09:45:21:847 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 09:45:21:847 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id,a.area_name, sc.shop_category_id,sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc where s.area_id = a.area_id and s.shop_category_id = sc.shop_category_id and s.shop_id = ? 
+2021-03-06 09:45:21:894 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2021-03-06 09:45:21:916 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2021-03-06 10:10:36:591 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.queryByShopId] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 10:10:36:591 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 10:10:36:614 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id,a.area_name, sc.shop_category_id,sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc where s.area_id = a.area_id and s.shop_category_id = sc.shop_category_id and s.shop_id = ? 
+2021-03-06 10:10:36:660 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2021-03-06 10:10:36:676 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2021-03-06 10:10:36:814 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.updateShop] use [master] Strategy,SqlComman Type [UPDATE]..
+2021-03-06 10:10:36:814 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 10:10:36:845 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_img = ?, last_edit_time = ? where shop_id = ? 
+2021-03-06 10:10:36:845 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==> Parameters: 修改后的店铺名称(String), D:\IdeaProject\images\item\shop\1\2021030610103629933.jpg(String), 2021-03-06 10:10:36.814(Timestamp), 1(Long)
+2021-03-06 10:10:36:845 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2021-03-06 10:10:36:845 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.queryByShopId] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 10:10:36:845 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 10:10:36:845 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id,a.area_name, sc.shop_category_id,sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc where s.area_id = a.area_id and s.shop_category_id = sc.shop_category_id and s.shop_id = ? 
+2021-03-06 10:10:36:845 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - ==> Parameters: 1(Long)
+2021-03-06 10:10:36:845 [main] DEBUG com.zxc.o2o.dao.ShopDao.queryByShopId - <==      Total: 1
+2021-03-06 10:18:44:383 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.AreaDao.queryArea] use [slave] Strategy,SqlComman Type [SELECT]..
+2021-03-06 10:18:44:383 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-03-06 10:18:44:398 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority DESC 
+2021-03-06 10:18:44:445 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2021-03-06 10:18:44:461 [main] DEBUG com.zxc.o2o.dao.AreaDao.queryArea - <==      Total: 4
+2021-03-06 13:21:08:964 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 13:21:08:964 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 13:21:08:971 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 13:21:08:986 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), test(String), 测试的店铺(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 13:21:08.949(Timestamp), 2021-03-06 13:21:08.949(Timestamp), 1(Integer), 审核中(String)
+2021-03-06 13:21:31:703 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.updateShop] use [master] Strategy,SqlComman Type [UPDATE]..
+2021-03-06 13:21:31:703 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 13:21:31:734 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ? where shop_id = ? 
+2021-03-06 13:21:31:756 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺(String), test(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 13:21:31.687(Timestamp), 1(Integer), 通过(String), 1(Long)
+2021-03-06 13:21:31:756 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2021-03-06 16:03:08:238 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 16:03:08:244 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 16:03:08:264 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 16:03:08:298 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 2(Integer), 1(Long), test(String), 测试的店铺(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 16:03:08.21(Timestamp), 2021-03-06 16:03:08.21(Timestamp), 1(Integer), 审核中(String)
+2021-03-06 16:03:45:989 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 16:03:45:991 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 16:03:46:003 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 16:03:46:033 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 8(Long), 2(Integer), 1(Long), test(String), 测试的店铺(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 16:03:45.975(Timestamp), 2021-03-06 16:03:45.975(Timestamp), 1(Integer), 审核中(String)
+2021-03-06 16:29:45:395 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 16:29:45:399 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 16:29:45:416 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 16:29:45:452 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 3(Integer), 1(Long), test(String), 测试的店铺(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 16:29:45.362(Timestamp), 2021-03-06 16:29:45.362(Timestamp), 1(Integer), 审核中(String)
+2021-03-06 16:31:57:868 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 16:31:57:871 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 16:31:57:890 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 16:31:57:918 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 3(Long), 3(Integer), 1(Long), test(String), 测试的店铺(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 16:31:57.854(Timestamp), 2021-03-06 16:31:57.854(Timestamp), 1(Integer), 审核中(String)
+2021-03-06 16:58:24:034 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 16:58:24:037 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 16:58:24:048 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 16:58:24:085 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 8(Long), 3(Integer), 1(Long), test(String), 测试的店铺(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 16:58:24.02(Timestamp), 2021-03-06 16:58:24.02(Timestamp), 1(Integer), 审核中(String)
+2021-03-06 17:52:09:669 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.insertShop] use [master] Strategy,SqlComman Type [INSERT]..
+2021-03-06 17:52:09:672 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 17:52:09:685 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==>  Preparing: insert into tb_shop(owner_id,area_id,shop_category_id, shop_desc,shop_name,shop_addr, phone,shop_img,priority, create_time,last_edit_time,enable_status, advice) values (?,?,?, ?,?,?, ?,?,?, ?,?,?, ?) 
+2021-03-06 17:52:09:714 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - ==> Parameters: 8(Long), 3(Integer), 10(Long), test(String), 测试的店铺(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 17:52:09.649(Timestamp), 2021-03-06 17:52:09.649(Timestamp), 1(Integer), 审核中(String)
+2021-03-06 17:52:09:719 [main] DEBUG com.zxc.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2021-03-06 21:03:16:163 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.updateShop] use [master] Strategy,SqlComman Type [UPDATE]..
+2021-03-06 21:03:16:163 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 21:03:16:194 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ? where shop_id = ? 
+2021-03-06 21:03:16:216 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺(String), test(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 21:03:16.147(Timestamp), 1(Integer), 通过(String), 1(Long)
+2021-03-06 21:03:16:216 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2021-03-06 21:05:39:196 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.ShopDao.updateShop] use [master] Strategy,SqlComman Type [UPDATE]..
+2021-03-06 21:05:39:196 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：master
+2021-03-06 21:05:39:227 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name = ?, shop_desc = ?, shop_addr = ?, phone = ?, shop_img = ?, priority = ?, last_edit_time = ?, enable_status = ?, advice = ? where shop_id = ? 
+2021-03-06 21:05:39:243 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺(String), test(String), test(String), 15271212657(String), test(String), 1(Integer), 2021-03-06 21:05:39.18(Timestamp), 1(Integer), 通过(String), 1(Long)
+2021-03-06 21:05:39:243 [main] DEBUG com.zxc.o2o.dao.ShopDao.updateShop - <==    Updates: 1

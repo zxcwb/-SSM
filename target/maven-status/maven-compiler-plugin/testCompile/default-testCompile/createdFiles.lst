@@ -1,0 +1,4 @@
+com\zxc\o2o\dao\PersonInfoDaoTest.class
+com\zxc\o2o\dao\WechatAuthDaoTest.class
+com\zxc\o2o\BaseTest.class
+com\zxc\o2o\dao\LocalAuthDaoTest.class

@@ -1,0 +1,5 @@
+2021-08-03 08:23:28:062 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.zxc.o2o.dao.PersonInfoDao.queryPersonInfoById] use [slave] Strategy,SqlCommand Type [SELECT]..
+2021-08-03 08:23:28:068 [main] DEBUG com.zxc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为：slave
+2021-08-03 08:23:28:078 [main] DEBUG com.zxc.o2o.dao.PersonInfoDao.queryPersonInfoById - ==>  Preparing: select user_id, name, gender, email, profile_img, user_type, create_time, last_edit_time, enable_status from tb_person_info where user_id = ? 
+2021-08-03 08:23:28:370 [main] DEBUG com.zxc.o2o.dao.PersonInfoDao.queryPersonInfoById - ==> Parameters: 8(Long)
+2021-08-03 08:23:28:408 [main] DEBUG com.zxc.o2o.dao.PersonInfoDao.queryPersonInfoById - <==      Total: 1
